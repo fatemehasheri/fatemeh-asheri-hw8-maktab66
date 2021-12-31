@@ -1,0 +1,23 @@
+.animation {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px ;
+    margin-top: 200px;
+    font-size: 40px;
+    background-color: palevioletred;
+    transition: background-color ease 2s ;
+    animation: color 5s alternate infinite ease;
+}
+.animation:hover{
+    background-color: rgb(55, 164, 226) ;
+} 
+  
+@keyframes color {
+    25% {color: rgb(212, 20, 100);transform: rotate(90deg);}
+    50% {color: rgb(255, 239, 196);transform: rotate(180deg);}
+    75%  {color: rgb(7, 55, 145);transform: rotate(270deg);}
+    100% {color: rgb(22, 150, 122);transform: rotate(360deg);}
+}
